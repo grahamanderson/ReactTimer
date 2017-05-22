@@ -12,13 +12,16 @@ $(document).foundation();
 //App scss
 import '!style-loader!css-loader!sass-loader!applicationStyles'
 
-//Checking
 
 ReactDOM.render(
-  <BrowserRouter history={hashHistory}>
-    <div>
-      <Route  path='/' component={Main} />
-    </div>
-  </BrowserRouter>,
-  document.getElementById('app')
+  <div>
+    <p>Did this work</p>
+    <BrowserRouter history={hashHistory}>
+      <div>
+        <Route  path='/' component={Main} />
+      </div>
+    </BrowserRouter>
+  </div>,
+    document.getElementById('app')
+
 );
