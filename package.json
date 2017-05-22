@@ -23,31 +23,33 @@
     ]
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.2.2",
-    "babel-preset-react": "^6.23.0",
-    "baggage-loader": "^0.2.4",
-    "css-loader": "^0.23.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^7.0.1",
-    "foundation-sites": "^6.3.0",
     "html-webpack-plugin": "^2.28.0",
     "jquery": "^2.2.1",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
-    "script-loader": "^0.6.1",
-    "style-loader": "^0.13.0",
-    "webpack": "^2.3.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
     "create-react-class": "^15.5.3",
+    "css-loader": "^0.23.1",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "baggage-loader": "^0.2.4",
+    "foundation-sites": "^6.3.0",
     "prop-types": "^15.5.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^2.0.0",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "webpack": "^2.5.1"
   }
 }

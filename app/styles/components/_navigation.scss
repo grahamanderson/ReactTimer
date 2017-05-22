@@ -1,4 +1,6 @@
-.top-bar,
-.top-bar ul {
-  background-color: $nav-background;
+$nav-background: #333;
+
+.top-bar {
+  // background-color: $nav-background;
+  $nav-background: #333;
 }

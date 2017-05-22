@@ -2,12 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack')
 
-// import HtmlWebpackPlugin from 'html-webpack-plugin';
-// import path from 'path';
-
-// import {path} from 'path';
-// import {HtmlWebpackPlugin} from 'html-webpack-plugin'
-
 module.exports = {
   entry: [
     '!script-loader!jquery/dist/jquery.min.js',
@@ -23,6 +17,7 @@ module.exports = {
     filename: 'index_bundle.js',
     publicPath: '/'
   },
+
   resolve: {
     modules: [__dirname, 'node_modules'],
     alias: {
@@ -33,16 +28,19 @@ module.exports = {
     },
     extensions: ['*', '.js', '.jsx']
   },
+
   module: {
     rules: [
       { test: /\.(jsx)$/, use: 'babel-loader' },
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
     ]
   },
+
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     historyApiFallback: true,
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: 'app/index.html'
