@@ -15,7 +15,6 @@ import '!style-loader!css-loader!sass-loader!applicationStyles'
 
 ReactDOM.render(
   <div>
-    <p>Did this work</p>
     <BrowserRouter history={hashHistory}>
       <div>
         <Route  path='/' component={Main} />
