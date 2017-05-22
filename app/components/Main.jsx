@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from 'Nav';
+import Navigation from 'Navigation';
 import PropTypes from 'prop-types';
 
 import $ from 'jquery'
@@ -9,7 +9,7 @@ $(document).foundation();
 const Main = (props) => {
     return (
       <div>
-        <Nav/>
+        <Navigation/>
         <div className="large-10 columns large-centered">
           <div className="row">
             <div className="columns medium-6 large-4 small-centered">
