@@ -24,17 +24,37 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       applicationStyles: 'app/styles/app.scss',
       Navigation: 'app/components/Navigation.jsx',
+      Countdown: 'app/components/Countdown.jsx',
+      Timer: 'app/components/Timer.jsx',
+      Clock: 'app/components/Clock.jsx'
 
     },
     extensions: ['*', '.js', '.jsx']
   },
 
+  // module: {
+  //   rules: [
+  //     { test: /\.(jsx)$/, use: 'babel-loader' },
+  //     { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+  //   ]
+  // },
+
   module: {
-    rules: [
-      { test: /\.(jsx)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
-    ]
-  },
+   loaders: [
+     {
+       loader: 'babel-loader',
+       query: {
+         presets: ['react', 'es2017', 'stage-0']
+       },
+       test: /\.jsx?$/,
+       exclude: /(node_modules|bower_components)/
+     }
+   ],
+   rules: [
+       { test: /\.(jsx)$/, use: 'babel-loader' },
+       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+     ]
+ },
 
   devtool: 'cheap-module-eval-source-map',
   devServer: {

@@ -1,39 +1,32 @@
-import React from 'react';
-import {NavLink} from 'react-router-dom';
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Navigation = () => {
+var Navigation = () => {
   return (
     <div className="top-bar">
       <div className="top-bar-left">
-
         <ul className="menu">
           <li className="menu-text">
             React Timer App
           </li>
-
           <li>
-            <NavLink exact to="/" activeClassName="active-link">Timer</NavLink>
+            <Link to="/timer">Timer</Link>
           </li>
-
           <li>
-            <NavLink to="/" activeClassName="active-link">Countdown</NavLink>
+            <Link to="/countdown">Countdown</Link>
           </li>
         </ul>
       </div>
-
       <div className="top-bar-right">
         <ul className="menu">
           <li className="menu-text">
-            Created by
-            <a href="https://GrahamBling.rocks" target="_blank" rel="noopener noreferrer">
-              Graham Anderson
-            </a>
+            Created by <a href="https://GrahamBling.rocks" target="_blank" rel="noopener noreferrer">
+            Graham Anderson</a>
           </li>
         </ul>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default Navigation;
