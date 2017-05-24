@@ -1,18 +1,18 @@
 import React from 'react'
 import Navigation from 'Navigation'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import $ from 'jquery'
 import '!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css'
 $(document).foundation();
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div>
-      <div>
-        <div>
-          <Navigation/>
-          {/* {props.children} */}
+      <Navigation/>
+      <div className="row">
+        <div className="column small-centered medium-6 large-4">
+          {props.children}
         </div>
       </div>
     </div>
