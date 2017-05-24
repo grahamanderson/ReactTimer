@@ -59,6 +59,7 @@
     "prop-types": "^15.5.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-foundation": "^0.7.0",
     "react-router": "^2.0.0",
     "react-router-dom": "^4.1.1",
     "sass-loader": "^6.0.5",

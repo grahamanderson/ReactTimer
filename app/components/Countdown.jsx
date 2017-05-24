@@ -3,10 +3,6 @@ import PropTypes from 'prop-types'
 import Clock from 'Clock'
 import CountdownForm from 'CountdownForm';
 
-// import $ from 'jQuery'
-// import '!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css'
-// $(document).foundation();
-
 export default class Countdown extends React.Component{
 
   constructor(props) {
