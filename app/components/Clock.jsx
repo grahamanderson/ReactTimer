@@ -7,7 +7,6 @@ class Clock extends React.Component{
   constructor(props) {
     super(props);
     this.formatSeconds = this.formatSeconds.bind(this);
-
   }
 
   formatSeconds(totalSeconds) {
@@ -16,7 +15,6 @@ class Clock extends React.Component{
 
     if (seconds < 10) seconds = '0' + seconds
     if (minutes < 10) minutes = '0' + minutes
-
 
     return minutes + ':' + seconds
   }

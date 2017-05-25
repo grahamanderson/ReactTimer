@@ -14,7 +14,7 @@
 // export default Main;
 
 // STATELESS Functional Component
-// const Main = () => {
+// const Main = (props) => {
 //     return (
 //       <div>
 //         <Nav/>

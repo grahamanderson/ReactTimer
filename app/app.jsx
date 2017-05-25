@@ -12,9 +12,8 @@ import $ from 'jquery'
 import '!style-loader!css-loader!foundation-sites/dist/css/foundation.min.css'
 $(document).foundation();
 
-//App scss
+// //App scss
 import '!style-loader!css-loader!sass-loader!applicationStyles'
-
 
 ReactDOM.render(
     <Router history={hashHistory}>

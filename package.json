@@ -36,8 +36,10 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.3",
     "mocha": "^3.4.1",
+    "node-sass": "^4.5.3",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
+    "sass-loader": "^6.0.5",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
@@ -51,6 +53,7 @@
     "create-react-class": "^15.5.3",
     "css-loader": "^0.23.1",
     "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^2.1.0",
     "foundation-sites": "^6.3.0",
     "html-webpack-plugin": "^2.28.0",
     "jquery": "^2.2.1",

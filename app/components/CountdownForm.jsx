@@ -10,7 +10,7 @@ export default class CountdownForm extends React.Component{
 
   onSubmit(e) {
     e.preventDefault()
-    let strSeconds = this.seconds.value
+    var strSeconds = this.seconds.value
 
     if (strSeconds.match(/^[0-9]*$/)) {
       this.seconds.value=''
@@ -38,12 +38,3 @@ render(){
     )
   }
 }
-
-CountdownForm.defaultProps = {
-    seconds: 60
-  };
-
-CountdownForm.propTypes = {
-    seconds: PropTypes.number,
-    onSetCountdown: PropTypes.func
-  };
